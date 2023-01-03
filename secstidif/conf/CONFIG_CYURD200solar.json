@@ -1,0 +1,51 @@
+Solar
+
+Solar Controller for combi DHW and heating system using solar panels, tankless hot water heater, storage tank and heat exchanger to provide radiant and baseboard heating
+
+CONFIG_CYURD200solar running on espboth/secsti
+has CUSTOM CODE
+
+{
+  "CYURD200": [
+    {
+      "sr": 0,
+      "label": "solar_dif"
+    },
+    {
+      "sr": 1,
+      "label": "heat_exch"
+    },
+    {
+      "sr": 1,
+      "label": "tankless"
+    },
+    {
+      "sr":2,
+      "label": "temp_out"
+    }
+  ]
+}
+
+
+[
+  {
+    "id": "temp_out",
+    "name": "Outside Temp",
+    "img": "temp_out.jpg"
+  },
+  {
+    "id": "solar_dif",
+    "name": "Collector/Tank Dif",
+    "img": "solar.jpg"
+  },
+  {
+    "id": "heat_exch",
+    "name": "Heat Exchanger",
+    "img": "heat_exch.jpg"
+  },
+  {
+    "id": "tankless",
+    "name": "Tankless Bypass Ckt",
+    "img": "tankless.jpg"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "CYURD006": [
+    {
+      "sr": 0,
+      "label": "temp_out"
+    }
+  ],
+  "CYURD114": [
+    {
+      "sr": 0,
+      "label": "lux"
+    }
+  ],
+  "CYURD126": [
+    {
+      "sr": 0,
+      "label": "pond"
+    },
+    {
+      "sr": 1,
+      "label": "hi_bed"
+    },
+    {
+      "sr": 2,
+      "label": "lo_bed"
+    },
+    {
+      "sr": 3,
+      "label": "empty"
+    },
+    {
+      "sr": 4,
+      "label": "full"
+    }
+  ]
+}
+
+[
+  {
+    "id": "temp_out",
+    "name": "Outside Temp",
+    "img": "temp_out.jpg"
+  },
+  {
+    "id": "lux",
+    "name": "Light in Lux",
+    "img": "lux.jpg"
+  },
+  {
+    "id": "pond",
+    "name": "Pond",
+    "img": "pond.jpg"
+  },
+  {
+    "id": "hi_bed",
+    "name": "Upper Garden Bed",
+    "img": "hi_bed.jpg"
+  },
+  {
+    "id": "lo_bed",
+    "name": "Lower Garden Bed",
+    "img": "lo_bed.jpg"
+  }
+  {
+    "id": "empty",
+    "name": "Pond is Empty",
+    "img": "empty.jpg"
+  },
+  {
+    "id": "full",
+    "name": "Pond is Full",
+    "img": "full.jpg"
+  }
+]
