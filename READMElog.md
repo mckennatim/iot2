@@ -26,7 +26,7 @@ https://steve.fi/hardware/d1-pins/
       *** [.pio\build\d1_mini\firmware.elf] Error 1t
 ## log
 
-### 1/2/23 1-iot2_w_secstdif
+### 1/2/23 01-iot2_w_secstdif
 most current code is secstidif= Sensors-Contolled_Sensors-Timers-Differential_Controller
 
 ### 8/5/21 17-secstidif-CYURD200solar
