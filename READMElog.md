@@ -26,6 +26,8 @@ https://steve.fi/hardware/d1-pins/
       *** [.pio\build\d1_mini\firmware.elf] Error 1t
 ## log
 
+### 1/4/23 02-oragnaize_conf-abbrev
+
 ### 1/2/23 01-iot2_w_secstdif
 most current code is secstidif= Sensors-Contolled_Sensors-Timers-Differential_Controller
 
