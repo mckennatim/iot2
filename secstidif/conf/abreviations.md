@@ -6,6 +6,18 @@
 - DS18B20: [DS18B20 1-wire thermometer](https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf)
 - DHT11 DHT12: [DHT11 DHT12 AM2302 temp/hum sensors](https://learn.adafruit.com/dht)
 
+## ports
+/*PORTS for INPUT*/
+const portsin_t inpo {
+  D2, //DS18b20a
+  D1, //DS18b20b
+  D5, //dht11
+  A0, //ANALOG
+  D6, //SPIdo
+  D8, //SPIcs
+  D7};//shares i2c D2 and D1
+/*SE constant declarations*/  
+
 ## structs and mqtt 
 srs
 - sr: sesnor or relay ID
