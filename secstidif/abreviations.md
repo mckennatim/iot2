@@ -7,16 +7,22 @@
 - DHT11 DHT12: [DHT11 DHT12 AM2302 temp/hum sensors](https://learn.adafruit.com/dht)
 
 ## ports
-/*PORTS for INPUT*/
-const portsin_t inpo {
-  D2, //DS18b20a
-  D1, //DS18b20b
-  D5, //dht11
-  A0, //ANALOG
-  D6, //SPIdo
-  D8, //SPIcs
-  D7};//shares i2c D2 and D1
-/*SE constant declarations*/  
+portnames are built into the software as constants
+
+typical uses in secstidif are:
+
+    /*PORTS for INPUT*/
+    const portsin_t inpo {
+      D2, //DS18b20a
+      D1, //DS18b20b
+      D5, //dht11
+      A0, //ANALOG
+      D6, //SPIdo
+      D8, //SPIcs
+      D7};//shares i2c D2 and D1
+
+Allowed ports for esp8266 and ports used in the 8266_2in-4out board are shown in [boards and ports](./boards-ports.md)      
+ 
 
 ## structs and mqtt 
 srs
