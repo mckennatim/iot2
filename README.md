@@ -8,8 +8,8 @@ USE POWERSHELL for github
 
 When in fs, use a PS7 terminal and normal git commands. When in WSL you can use the source control commands in the vscode sidebar.
 
-### [README log](READMElog)
-### [README problems](READMEproblems)
+### [README log](READMElog.md)
+### [README problems](READMEproblems.md)
 
 
 
