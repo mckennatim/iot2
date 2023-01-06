@@ -1,0 +1,53 @@
+{
+    "CYURD127": [
+      {
+        "sr": 0,
+        "label": "strike"
+      },
+      {
+        "sr": 1,
+        "label": "redLED"
+      },
+      {
+        "sr": 1,
+        "label": "greenLED"
+      },
+      {
+        "sr":2,
+        "label": "blueLED"
+      },
+      {
+        "sr": 3,
+        "label": "contact" 
+      }
+    ]
+  }
+  
+  
+  [
+    {
+        "id": "strike",
+        "name": "Door Strike",
+        "img": "strike.jpg"
+    },
+    {
+        "id": "redLED",
+        "name": "closed & locked: redLED",
+        "img": "redLED.jpg"
+    },
+    {
+        "id": "greenLED",
+        "name": "unlocked: greenLED",
+        "img": "greenLED.jpg"
+    },
+    {
+        "id": "blueLED",
+        "name": "open: blueLED",
+        "img": "blueLED.jpg"
+    },
+    {
+        "id": "contact",
+        "name": "NC magnetic door contact",
+        "img": "contact.jpg"
+    }
+  ]
