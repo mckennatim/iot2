@@ -18,3 +18,42 @@ The device has:
   - D8 - sr3 blueLED
   - D1 - sr4 strike
 
+### from an existing code standpoint the operation can be described:
+
+When you push the button on the app
+- some command is sent to the device that opens the door like from 
+  - E:\fs\www\hooks3\iot\cascada2\src\components\Control.jsx\changeTo() publishes:
+    - topic: CYURD127/cmd, payload: {"id":4, "sra":[1]}
+- the device turns on the greenLED    
+- ideally the device listens for a change of state in the magnetic contact then... 
+  - turns the light to blueLED 
+  - turns off the strike
+    - topic: CYURD127/cmd, payload: {"id":4, "sra":[0]}
+  - sends the state of the LED and the strike back to the app  
+
+Automatically
+- once the door closes and
+  - the magnetic contact is connected and
+  - the stike is off
+- change the LED to red and send its state to the app
+
+In summary
+- This application reacts to:
+  - pressing the open button on the app
+    - opens the strike
+    - turns on the greenLED
+  - a change in the magnetic latch
+    - if 0 -> 1: turn on the redLED and send state
+    - if 1 -> 0: turn on the blueLED, turn off the strike and send state
+
+### So what code can it use and what code does it need?
+
+The strike app will reuse the mqtt messaging formats of existing code. It will use the authentication code. It will use publish srstate and read cmd.
+It will listen for changes in the mag contact. 
+
+### How to approach the project?
+
+- get some previous code to flash to the device
+- assign new ports and srs and see if it will flash
+- pare down the code to only do what the app needs
+

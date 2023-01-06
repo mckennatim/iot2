@@ -1,27 +1,10 @@
 #include "CONFIG.h"
-//CONFIG_CYURD126cascada.cpp
+//CONFIG_CYURD127strike.cpp
 /*INSTRUCTIONS
 * be sure to modify FLAGS for HAYpROGS and HAYtIMRS
 */
 
-/*CUSTOM CODE
-Transformer D8 activated when either D5,D6 or D7 hi
-srs.ti[0] (sr 0) onoff for D5
-srs.ti[1] (sr 1) onoff for D6
-srs.ti[2] (sr 2) onoff for D7
-(see srs.ti_t and prgs.prg_t)
-otherwise make some DUMMY custom function
-void customInit(){
-  if(0==1){
-    int dog =3;
-  }
-};
-void customLoop() {
-  if(0==1){
-    int dog =3;
-  }
-};
-*/ 
+/*CUSTOM CODE*/ 
 void customInit(){
   pinMode(D8, OUTPUT);
   digitalWrite(D8, HIGH);

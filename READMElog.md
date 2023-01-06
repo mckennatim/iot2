@@ -26,6 +26,8 @@ https://steve.fi/hardware/d1-pins/
       *** [.pio\build\d1_mini\firmware.elf] Error 1t
 ## log
 
+### 1/5/23 03-begin_strike_design
+
 ### 1/4/23 02a-oragnaize_conf-abbrev-ports-boards
 
 ### 1/2/23 01-iot2_w_secstdif
